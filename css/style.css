@@ -10,3 +10,18 @@ body:after{display:none}.lightboxOverlay{position:absolute;top:0;left:0;z-index:
 	text-transform: uppercase;
 	text-align: center;
     }
+#menu1{
+	background:#ffffff;
+}
+#menu1 li a{
+	color:#CCC;
+}
+#menu1 li span{
+	color:#CCC;
+}
+.bar__module span{
+	color:#CCC !important;
+}
+*{
+	outline: 1px solid red;
+}

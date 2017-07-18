@@ -40,19 +40,13 @@ body:after{display:none}.lightboxOverlay{position:absolute;top:0;left:0;z-index:
   color:#9d9d9d;
 }
 img{
-	margin:10px auto -70px auto;
+	margin:0px auto -70px auto;
 }
 	.hero img{
 		width: 100%;
 	}
 	.logo{
-		margin:0 40%;
-	}
-	ul li{
-		display: inline-block;
-		border-right:2px solid #CCC;
-		padding:5px 15px;
-		color:#9d9d9d;
+		margin:0 31%;
 	}
 section{
 	padding: 0;
@@ -60,40 +54,42 @@ section{
 
 
 .contenedor {
-	width: 95%;
-	max-width:1000px;
+	max-width:100%;
 	margin:auto;
 }
- 
-.contenedor p {
-	margin-bottom:40px;
-}
  header nav {
-	background:red;
+	background:#ffffff;
 }
 header nav ul {
 	list-style: none;
 	overflow: hidden;
+	text-align:center;
 }
-
+header nav ul li{
+	display: inline-block;
+	text-align:center;
+}
 header nav ul li a {
-	display: block;
-	padding:20px;
-	color:#CCC;
+	display: inline-block;
+	padding:15px;
+	color:#9d9d9d;
+	border-right:2px solid #CCC;
 	text-decoration: none;
+	text-transform: uppercase;
 }
  
 header nav ul li a:hover {
-	background:#2980b9;
+	background:#d23338;
+	color:#ffffff;
 }
  
  
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
 .menu-fixed {
 	position:fixed;
-	z-index:1000;
+	z-index:1;
 	top:0;
-	max-width:1000px;
+	max-width:100%;
 	width:100%;
 	box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }

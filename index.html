@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./css/css_mrab1GKFgElx-kxKCNq1SnIWRV-GYZDakUc8CBnGRwo.css" media="all">
   <link rel="stylesheet" href="./css/bootstrap.min.css" media="all">
   <link rel="stylesheet" href="./css/style.css" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
   <body class="path-not-frontpage path-node page-node-type-full-page has-glyphicons">
 	  <div class="nav-container">
@@ -131,14 +132,26 @@
       <div class="field field--name-field-paragraph-content field--type-text-long field--label-hidden field--item">
         <div class="row">
           <div class="col-sm-12">
-            <h1>MAS DE 2000 RECURSOS PARA TU IGLESIA</h1>
+            <div style="display:-webkit-inline-box;"><h1>MAS DE </h1><h1 id="counter"> 1000 </h1><h1> RECURSOS PARA TU IGLESIA</h1></div>
           </div>
   </div>
 </div>
       
     	</div>
   </section>
-
+<script>
+      $(document).ready(function(){      
+      setTimeout(function(){
+          $('#counter').text('1000');
+          setInterval(function(){ 
+            var curval=parseInt($('#counter').text());
+            if(curval<2000){
+              $('#counter').text(curval+1);
+            }
+          }, 2);
+        }, 500);
+      });
+  </script>
               <section class="paragraph paragraph--type--paragraph-block paragraph--view-mode--default">
     <div class="container  ">
     	

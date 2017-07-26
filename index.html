@@ -20,19 +20,32 @@
       <header>
          <div class="contenedor">
             <div class="logo">
-               <img class="logo" width="300px" class="img-responsive" src="img/logo.png">
+               <img width="300px" class="img-responsive" src="img/logo.png">
             </div>
-            <nav class="menu">
-               <ul>
-                  <li><a href="#">Inicio</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Proyectos</a></li>
-                  <li><a href="#">Trabajos</a></li>
-                  <li><a href="#">Contacto</a></li>
-               </ul>
-            </nav>
+            <nav class="navbar navbar-default">
+            <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a style="display:none" class="navbar-brand" href="#"><img width="110px" class="img-responsive" src="img/logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav text-center">
+         <li><a href="#">Inicio</a></li>
+         <li><a href="#">Blog</a></li>
+         <li><a href="#">Proyectos</a></li>
+         <li><a href="#">Trabajos</a></li>
+         <li><a href="#">Contacto</a></li>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
          </div>
       </header>
+   
       <script>
          $(document).ready(function(){
            var altura = $('.menu').offset().top;
@@ -40,6 +53,7 @@
            $(window).on('scroll', function(){
              if ( $(window).scrollTop() > altura ){
                $('.menu').addClass('menu-fixed');
+
              } else {
                $('.menu').removeClass('menu-fixed');
              }
@@ -54,7 +68,7 @@
          <div class="container">
             <div class="field field--name-field-paragraph-content field--type-text-long field--label-hidden field--item">
                <div class="row">
-                  <div class="col-sm-12">
+                  <!--<div class="col-sm-12">
                      <div style="display:-webkit-inline-box;">
                         <h1>MAS DE </h1>
                         &nbsp &nbsp
@@ -62,7 +76,7 @@
                         &nbsp &nbsp
                         <h1> RECURSOS PARA TU IGLESIA</h1>
                      </div>
-                  </div>
+                  </div>-->
                </div>
             </div>
          </div>

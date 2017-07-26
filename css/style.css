@@ -9456,7 +9456,7 @@ header nav ul {
     overflow: hidden;
     text-align:center;
 }
-header nav ul li {
+.navbar ul li {
     display: inline-block;
     text-align:center;
 }
@@ -9521,6 +9521,12 @@ header nav ul li a:hover {
         border-right:none;
         padding:0 !important;
     }
+    .navbar li a:hover {
+    color:#fff;
+}
+    .navbar li:hover {
+    background:#404042;
+}
     .logo{
         display: none;
     }

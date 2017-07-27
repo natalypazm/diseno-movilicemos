@@ -5021,10 +5021,6 @@ pre {
 .bg--dark .bg--secondary {
     background:#343434;
 }
-a {
-    color:#d23338;
-    font-weight:700;
-}
 a:hover {
     color:#2275d7;
     text-decoration:underline;
@@ -9460,14 +9456,13 @@ header ul li {
     display: inline-block;
     text-align:center;
 }
-header nav li a {
+.navbar li a {
     display: inline-block;
     font-weight: bolder !important;
     text-decoration: none;
     text-transform: uppercase;
     width: 150px;
     margin: 15px 0;
-    color: #d23338;
     border-right:2px solid #CCC;
     padding:5px 15px;
 }
@@ -9525,11 +9520,8 @@ header nav ul li a:hover {
         border-right:none;
         padding:0 !important;
     }
-    .navbar li a:hover {
-    color:#fff;
-}
-    .navbar li:hover {
-    background:#404042;
+     .navbar li:hover {
+    background:#eee;
 }
     .navbar{
         display:block !important;

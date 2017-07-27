@@ -9470,7 +9470,7 @@ header nav ul li a:hover {
     background:#d23338;
     color:#ffffff;
 }
-.navbar a {
+.navbar li a {
     display:inline-block;
     text-align: center;
     text-decoration: none;
@@ -9513,10 +9513,13 @@ header nav ul li a:hover {
 
 
 @media all and (max-width: 767px) {
-    .desktop{
-        display:none;
+    .logo img{
+        display:none !important;
     }
-    .navbar a{
+    .navbar-brand{
+        display:table !important;
+    }
+    .navbar li a{
         border-right:none;
         padding:0 !important;
     }

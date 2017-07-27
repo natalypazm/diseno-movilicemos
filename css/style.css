@@ -9527,6 +9527,10 @@ nav ul li a:hover {
     .menu-fixed{
         position: relative;
     }
+    .navbar-nav{
+        display: block;
+    }
+    
     .navbar-nav > li{
         display: block !important;
         list-style-position: inside !important;

@@ -973,7 +973,6 @@ h6,
     color:#252525;
     font-weight:300;
     font-variant-ligatures:common-ligatures;
-    margin-top:0;
     margin-bottom:0;
 }
 h1,
@@ -9436,9 +9435,13 @@ article.comment:last-child {
 }
 .hero img {
     width: 100%;
+    height:705px;
+}
+section.space--xxs{
+    margin:1.85714286em 0;
 }
 section {
-    padding: 0;
+    padding: 0 !important;
 }
 .contenedor {
     max-width:100%;

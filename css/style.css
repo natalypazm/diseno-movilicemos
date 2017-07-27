@@ -9477,8 +9477,6 @@ nav ul li a:hover {
     background: #ffffff;
     box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }
-/*=====================menu hambuerguesa====================*/
-
 .navbar-default{
     border:none;
 }
@@ -9529,7 +9527,8 @@ nav ul li a:hover {
     .menu-fixed{
         position: relative;
     }
-    .navbar-nav{
-        display: block;
+    .navbar-nav > li{
+        display: block !important;
+        list-style-position: inside !important;
     }
 }

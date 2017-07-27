@@ -9476,7 +9476,7 @@ header nav ul li a:hover {
     text-decoration: none;
     font-size: 17px;
     padding:5px 15px;
-    color: #d23338;
+    color: #d23338 !important;
     border-right:2px solid #CCC;
 }
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
@@ -9510,6 +9510,9 @@ header nav ul li a:hover {
     background-color:#ffffff;
     width: 100%;
 }
+.navbar-nav{
+    left: 0;
+}
 
 
 @media all and (max-width: 767px) {
@@ -9518,6 +9521,7 @@ header nav ul li a:hover {
     }
     .navbar-brand{
         display:table !important;
+        padding:0;
     }
     .navbar li a{
         border-right:none;
@@ -9525,15 +9529,15 @@ header nav ul li a:hover {
     }
      .navbar li:hover {
     background:#eee;
-}
-    .navbar{
-        display:block !important;
     }
     .navbar-header{
-      
+        margin:0 !important; 
         background:#ffffff;
         width:100%;
         z-index:1;
         padding:15px 0;
+    }
+    .menu-fixed{
+        position: relative;
     }
 }

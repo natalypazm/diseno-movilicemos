@@ -9456,11 +9456,11 @@ header nav ul {
     overflow: hidden;
     text-align:center;
 }
-.navbar ul li {
+header ul li {
     display: inline-block;
     text-align:center;
 }
-.navbar-default .navbar-nav li a {
+header nav li a {
     display: inline-block;
     font-weight: bolder !important;
     text-decoration: none;
@@ -9468,10 +9468,21 @@ header nav ul {
     width: 150px;
     margin: 15px 0;
     color: #d23338;
+    border-right:2px solid #CCC;
+    padding:5px 15px;
 }
 header nav ul li a:hover {
     background:#d23338;
     color:#ffffff;
+}
+.navbar a {
+    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding:5px 15px;
+    color: #d23338;
+    border-right:2px solid #CCC;
 }
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
 
@@ -9506,17 +9517,12 @@ header nav ul li a:hover {
     top: 0;
     width: 100%;
 }
-.navbar a {
-    display:inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    padding:5px 15px;
-    color: #d23338;
-    border-right:2px solid #CCC;
-}
+
 
 @media all and (max-width: 767px) {
+    .desktop{
+        display:none;
+    }
     .navbar a{
         border-right:none;
         padding:0 !important;
@@ -9527,10 +9533,7 @@ header nav ul li a:hover {
     .navbar li:hover {
     background:#404042;
 }
-    .logo{
-        display: none;
-    }
-    .navbar-brand{
+    .navbar{
         display:block !important;
     }
     .navbar-header{
@@ -9538,7 +9541,6 @@ header nav ul li a:hover {
         background:#ffffff;
         width:100%;
         z-index:1;
-        top:0;
-        padding:30px 0 15px 0;
+        padding:15px 0;
     }
 }

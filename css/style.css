@@ -9444,15 +9444,8 @@ section {
     max-width:100%;
     margin:auto;
 }
-header nav {
-    background:#ffffff;
-}
-header nav ul {
-    list-style: none;
-    overflow: hidden;
-    text-align:center;
-}
-header ul li {
+
+.navbar ul li {
     display: inline-block;
     text-align:center;
 }
@@ -9465,19 +9458,13 @@ header ul li {
     margin: 15px 0;
     border-right:2px solid #CCC;
     padding:5px 15px;
+    text-align: center;
+    font-size:17px;
+    color: #d23338 !important;
 }
-header nav ul li a:hover {
+nav ul li a:hover {
     background:#d23338;
     color:#ffffff;
-}
-.navbar li a {
-    display:inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    padding:5px 15px;
-    color: #d23338 !important;
-    border-right:2px solid #CCC;
 }
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
 
@@ -9512,8 +9499,10 @@ header nav ul li a:hover {
 }
 .navbar-nav{
     left: 0;
+    display: flex;
+    justify-content: center;
+    float: none;
 }
-
 
 @media all and (max-width: 767px) {
     .logo img{
@@ -9539,5 +9528,8 @@ header nav ul li a:hover {
     }
     .menu-fixed{
         position: relative;
+    }
+    .navbar-nav{
+        display: block;
     }
 }

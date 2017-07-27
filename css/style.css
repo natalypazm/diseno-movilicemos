@@ -9494,6 +9494,7 @@ nav ul li a:hover {
 .navbar {
     background-color:#ffffff;
     width: 100%;
+    margin-bottom:0;
 }
 .navbar-nav{
     left: 0;
@@ -9522,7 +9523,7 @@ nav ul li a:hover {
         background:#ffffff;
         width:100%;
         z-index:1;
-        padding:15px 0;
+        padding:15px 0 0 0;
     }
     .menu-fixed{
         position: relative;

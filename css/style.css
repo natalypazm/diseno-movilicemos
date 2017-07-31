@@ -9514,14 +9514,17 @@ nav ul li a:hover {
 #counter{
     color:#d23338;
 }
-
+.navbar-brand{
+    padding:0;
+    display:none;
+}
 @media all and (max-width: 767px) {
     .logo img{
         display:none !important;
     }
     .navbar-brand{
         display:table !important;
-        padding:0;
+        padding:10;
     }
     .navbar li a{
         border-right:none;

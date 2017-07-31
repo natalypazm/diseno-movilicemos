@@ -17,8 +17,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    </head>
    <body class="path-not-frontpage path-node page-node-type-full-page has-glyphicons">
-
-<div class="logo"><img width="300px" class="img-responsive" src="img/logo.png"></div>
+<section id="container-main">
+   <div class="logo"><img width="300px" class="img-responsive" src="img/logo.png"></div>
 <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
@@ -31,7 +31,7 @@
       <a style="display:none" class="navbar-brand" href="#"><img width="200" class="img-responsive" src="img/logo3.png"></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="menu nav navbar-nav">
+      <ul class="menu nav navbar-nav navbar-right">
          <li><a href="#">Inicio</a></li>
          <li><a href="#">Blog</a></li>
          <li><a href="#">Proyectos</a></li>
@@ -42,8 +42,6 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-        
-   
       <script>
          $(document).ready(function(){
            var altura = $('.menu').offset().top;
@@ -63,15 +61,17 @@
       <section class="hero">
          <img src="img/landing-10.jpeg" alt="">
       </section>
-      <section class="paragraph paragraph--type--paragraph-block text-center cta cta-4 space--xxs border--bottom paragraph--view-mode--default">
+      <section class="paragraph paragraph--type--paragraph-block text-center cta cta-4 space--xxs border--bottom paragraph--view-mode--default" id="row-cta">
          <div class="container">
             <div class="field field--name-field-paragraph-content field--type-text-long field--label-hidden field--item">
-               <div style="display:-webkit-inline-box" class="texto row">
+               <div style="display:-webkit-inline-box" class="texto row py-4">
                   <h1>MAS DE</h1><span class="espacio">&nbsp &nbsp</span><h1 id="counter">1000</h1><span class="espacio">&nbsp &nbsp</span><h1> RECURSOS PARA TU IGLESIA</h1>
                </div>
             </div>
          </div>
       </section>
+</section>
+
       <script>
          $(document).ready(function(){      
          setTimeout(function(){

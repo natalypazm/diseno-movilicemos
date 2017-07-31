@@ -9515,8 +9515,10 @@ nav ul li a:hover {
     color:#d23338;
 }
 .navbar-brand{
-    padding:0;
-    display:none;
+    padding: 0;
+    position: fixed;
+    z-index: 2;
+    top: 20px;
 }
 @media all and (max-width: 767px) {
     .logo img{
@@ -9524,7 +9526,10 @@ nav ul li a:hover {
     }
     .navbar-brand{
         display:table !important;
-        padding:10;
+        padding:10px;
+    }
+    .navbar-brand img{
+        background-image:url(../img/logo.png);
     }
     .navbar li a{
         border-right:none;

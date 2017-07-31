@@ -9488,7 +9488,6 @@ nav ul li a:hover {
 .navbar-default .navbar-toggle{
     background-color:#404042;
     border-color:#404042;
-    margin-right:30px;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color:#404042;
@@ -9526,10 +9525,9 @@ nav ul li a:hover {
     }
     .navbar-brand{
         display:table !important;
-        padding:10px;
-    }
-    .navbar-brand img{
-        background-image:url(../img/logo.png);
+        padding:0px;
+        top:0;
+        position:relative;
     }
     .navbar li a{
         border-right:none;

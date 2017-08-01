@@ -9444,141 +9444,17 @@ section.space--xxs{
 }
 section {
     padding: 0 !important;
-}/*
-.contenedor {
-    max-width:100%;
-    margin:auto;
 }
-
-.navbar ul li {
-    display: inline-block;
-    text-align:center;
-}*/
-
-/* --- Clase que agregaremos cuando el usuario haga scroll --- */
-/*
-.menu-fixed {
-    position:fixed;
-    justify-content: flex-end !important;
-    z-index:1;
-    top:0;
-    width:80%;
-    background: #ffffff;
-    box-shadow:0px 4px 3px rgba(0,0,0,.5);
-    padding:30px 0 15px 0;
-}
-*/
-
-/*
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color:#404042;
-} 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #ffffff;
-}
-.navbar {
-    min-height:0px;
-    background-color:#ffffff;
-    width: 100%;
-    margin-bottom:0;
-}
-.navbar-nav{
-    left: 0;
-    display: flex;
-    justify-content: center;
-    float: none;
-}
-
-
-.navbar-brand{
-    padding: 0;
-    position: fixed;
-    z-index: 2;
-    top: 20px;
-}
-@media all and (max-width: 767px) {
-    .logo img{
-        display:none !important;
-    }
-    .navbar-brand{
-        display:table !important;
-        padding:0px;
-        top:0;
-        position:relative;
-    }
-    .navbar li a{
-        border-right:none;
-        padding:10px 0 !important;
-    }
-    .navbar li:hover {
-    background:#eee;
-    }
-    .navbar-header{
-        margin:0 !important; 
-        background:#ffffff;
-        width:100%;
-        z-index:1;
-        padding:15px 0 0 0;
-    }
-    .menu-fixed{
-        position: relative;
-    }
-    .navbar-nav{
-        display: block;
-        padding-top:15px;
-    }
-    .navbar-nav > li{
-        display: block !important;
-        list-style-position: inside !important;
-    }
-    .texto{
-        display:block !important;
-    }
-    .texto h1{
-        margin:0 !important;
-    }
-    .espacio{
-        display:none;
-    }
-    .hero img {
-    height:50vh; 
-    object-fit:cover;
-}
-    
-}
-
 #container-main{
     height: 100vh;
     position: relative;
-}
-
-#row-cta{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: #fff;
-    margin: 0;
-    right: 0;
-}
-
-.py-4{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.flex-menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-}
-
-.fixed{
-    position: fixed;
-}*/
-
-#container-main{
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .navbar-nav{
@@ -9589,14 +9465,22 @@ section {
 }
 
 .hero{
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     position: relative;
 }
 
 .social-list{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
 }
 
@@ -9605,8 +9489,12 @@ section {
 }
 
 nav ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 nav ul li{
@@ -9624,6 +9512,7 @@ nav li a {
     font-size:17px;
     color: #d23338 !important;
     line-height: 50px !important;
+    -webkit-transition: all .2s ease;
     transition: all .2s ease;
 }
 nav ul li a:hover {
@@ -9652,7 +9541,9 @@ nav ul li a:hover {
 }
 
 .menu-estatico ul {
-    justify-content: flex-end !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
 }
 .navbar-brand{
     padding:0;         
@@ -9669,6 +9560,8 @@ nav ul li a:hover {
         margin:0 !important;
     }
 .flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -9681,7 +9574,9 @@ nav ul li a:hover {
 }
 
 .py-2{
+    padding-top: 32px !important;
     padding-top: 2rem !important;
+    padding-bottom: 32px !important;
     padding-bottom: 2rem !important;
 }
 .m-0{
@@ -9690,9 +9585,6 @@ nav ul li a:hover {
 .navbar-default{
         z-index:1000000;
     }
-
-
-
 @media all and (max-width: 767px){
     
     #container-main .logo{
@@ -9716,7 +9608,10 @@ nav ul li a:hover {
     }
 
     nav ul{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .texto{

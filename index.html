@@ -19,7 +19,8 @@
    <body class="path-not-frontpage path-node page-node-type-full-page has-glyphicons">
 <section id="container-main">
    <div class="logo"><img width="300px" class="img-responsive" src="img/logo.png"></div>
-<nav class="navbar navbar-default">
+
+<nav class="navbar navbar-default menu">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -31,7 +32,7 @@
       <a style="display:none" class="navbar-brand" href="#"><img width="200" class="img-responsive" src="img/logo3.png"></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="menu nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav">
          <li><a href="#">Inicio</a></li>
          <li><a href="#">Blog</a></li>
          <li><a href="#">Proyectos</a></li>
@@ -48,10 +49,10 @@
            
            $(window).on('scroll', function(){
              if ( $(window).scrollTop() > altura ){
-               $('.menu').addClass('menu-fixed');
+               $('.menu').addClass('menu-estatico');
                $('.navbar-brand').css('display','block');
              } else {
-               $('.menu').removeClass('menu-fixed');
+               $('.menu').removeClass('menu-estatico');
                $('.navbar-brand').css('display','none');
              }
            });

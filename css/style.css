@@ -9008,7 +9008,7 @@ footer a.type--fine-print:not(:first-child) {
     margin-left:1.85714286em;
 }
 footer .logo {
-    max-height:1.67142857em;
+    width: 60%;
 }
 footer ul:not(.list-inline):not(.slides) > li {
     line-height:2.32142857em !important;
@@ -9593,6 +9593,17 @@ section {
     position: relative;
 }
 
+.social-list{
+        display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.list-inline li{
+    margin-left: 25px;
+}
+
 nav ul{
     display: flex;
     justify-content: center;
@@ -9639,6 +9650,10 @@ nav ul li a:hover {
      width:100%;
      padding:10px 0;
 }
+
+.menu-estatico ul {
+    justify-content: flex-end !important;
+}
 .navbar-brand{
     padding:0;         
 }
@@ -9653,6 +9668,9 @@ nav ul li a:hover {
 .texto h1{
         margin:0 !important;
     }
+.flex{
+    display: flex;
+}
 
 #row-cta{
     bottom: 0;
@@ -9663,18 +9681,20 @@ nav ul li a:hover {
 }
 
 .py-2{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
 }
 .m-0{
     margin: 0 !important;
 }
+.navbar-default{
+        z-index:1000000;
+    }
+
 
 
 @media all and (max-width: 767px){
-    .navbar-default{
-        z-index:1;
-    }
+    
     #container-main .logo{
         display:none;
     }
@@ -9701,6 +9721,7 @@ nav ul li a:hover {
 
     .texto{
     display:block !important;
+    }
 }
 
 
